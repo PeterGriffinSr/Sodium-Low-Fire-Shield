@@ -4,9 +4,15 @@
   "version": "${version}",
   "name": "Sodium Low Fire/Shield",
   "description": "Sodium integration that adds low fire and low shield",
-  "authors": [],
-  "contact": {},
-  "license": "All-Rights-Reserved",
+  "authors": [
+    "Codezz-ops"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/sodium-low-fire-shield",
+    "sources": "https://github.com/PeterGriffinSr/sodium-low-fire-shield",
+    "issues": "https://github.com/PeterGriffinSr/sodium-low-fire-shield/issues"
+  },
+  "license": "LGPLv3",
   "icon": "assets/sodium_low_fire_shield/icon.png",
   "environment": "client",
   "entrypoints": {
@@ -33,7 +39,7 @@
     "minecraft": "${minecraft_version}",
     "sodium": "*"
   },
-  "suggests": {
+  "recommends": {
     "sodium-extra": "*"
   }
 }
