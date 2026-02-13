@@ -1,0 +1,6 @@
+{
+  "sodium_low_fire_shield.option.low_fire": "Low Fire",
+  "sodium_low_fire_shield.option.low_fire.tooltip": "Moves the fire overlay down to improve visibility",
+  "sodium_low_fire_shield.option.low_shield": "Low Shield",
+  "sodium_low_fire_shield.option.low_shield.tooltip": "Moves the shield down to improve visibility"
+}
