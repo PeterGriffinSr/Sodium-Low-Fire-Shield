@@ -1,3 +1,0 @@
-/gamemode survival
-/give Player478 minecraft:enchanted_golden_apple 64
-/give Player611 minecraft:shield
