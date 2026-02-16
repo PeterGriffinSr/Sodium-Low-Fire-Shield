@@ -14,7 +14,7 @@ loom {
     splitEnvironmentSourceSets()
 
     mods {
-        "sodium_low_fire_shield" {
+        "low_fire_shield" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }
@@ -41,9 +41,6 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "maven.modrinth:sodium:${project.sodium_version}"
-    modCompileOnly "maven.modrinth:sodium-extra:${project.sodium_extra_version}"
-    modLocalRuntime "maven.modrinth:sodium-extra:${project.sodium_extra_version}"
 }
 
 processResources {
@@ -72,8 +69,6 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
-    targetCompatibility = '21'
-    sourceCompatibility = '21'
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     if (JavaVersion.current() < javaVersion) {
         toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)

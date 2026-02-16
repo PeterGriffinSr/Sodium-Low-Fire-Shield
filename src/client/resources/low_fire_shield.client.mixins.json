@@ -1,12 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.codezz.sodium_low_fire_shield.mixin.client",
+  "package": "com.codezz.low_fire_shield.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
     "InGameOverlayRendererMixin",
-    "HeldItemRendererMixin",
-    "SodiumExtraGameOptionPagesMixin"
+    "HeldItemRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

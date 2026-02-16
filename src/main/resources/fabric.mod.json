@@ -1,45 +1,41 @@
 {
   "schemaVersion": 1,
-  "id": "sodium_low_fire_shield",
+  "id": "low_fire_shield",
   "version": "${version}",
-  "name": "Sodium Low Fire/Shield",
-  "description": "Sodium integration that adds low fire and low shield",
+  "name": "Low Fire/Shield",
+  "description": "integration that adds low fire and low shield",
   "authors": [
     "Codezz-ops"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/sodium-low-fire-shield",
-    "sources": "https://github.com/PeterGriffinSr/sodium-low-fire-shield",
-    "issues": "https://github.com/PeterGriffinSr/sodium-low-fire-shield/issues"
+    "homepage": "https://modrinth.com/mod/low-fire-shield",
+    "sources": "https://github.com/PeterGriffinSr/low-fire-shield",
+    "issues": "https://github.com/PeterGriffinSr/low-fire-shield/issues"
   },
   "license": "LGPLv3",
-  "icon": "assets/sodium_low_fire_shield/icon.png",
+  "icon": "assets/low_fire_shield/icon.png",
   "environment": "client",
   "entrypoints": {
     "fabric-datagen": [
-      "com.codezz.sodium_low_fire_shield.client.SodiumLowFireShieldDataGenerator"
+      "com.codezz.low_fire_shield.client.LowFireShieldDataGenerator"
     ],
     "client": [
-      "com.codezz.sodium_low_fire_shield.client.SodiumLowFireShieldClient"
+      "com.codezz.low_fire_shield.client.LowFireShieldClient"
     ],
     "main": [
-      "com.codezz.sodium_low_fire_shield.Clearview"
+      "com.codezz.low_fire_shield.Clearview"
     ]
   },
   "mixins": [
-    "sodium_low_fire_shield.mixins.json",
+    "low_fire_shield.mixins.json",
     {
-      "config": "sodium_low_fire_shield.client.mixins.json",
+      "config": "low_fire_shield.client.mixins.json",
       "environment": "client"
     }
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}",
-    "sodium": "*"
-  },
-  "recommends": {
-    "sodium-extra": "*"
+    "minecraft": ">=${minecraft_version}"
   }
 }

@@ -1,4 +1,4 @@
-package com.codezz.sodium_low_fire_shield;
+package com.codezz.low_fire_shield;
 
 import net.fabricmc.api.ModInitializer;
 
